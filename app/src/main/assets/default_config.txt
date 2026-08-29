@@ -1,0 +1,1 @@
+vless://YOUR_UUID@YOUR_SERVER:443?security=reality&type=tcp&pbk=YOUR_PUBLIC_KEY&sid=YOUR_SHORT_ID&fp=chrome#SkyVPN
