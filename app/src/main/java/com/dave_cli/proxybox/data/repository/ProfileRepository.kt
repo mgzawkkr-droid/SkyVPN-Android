@@ -30,6 +30,27 @@ class ProfileRepository(db: AppDatabase) {
     val subscriptions: Flow<List<SubscriptionEntity>> = subscriptionDao.getAllSubscriptions()
     val routingRules: Flow<List<RoutingRuleEntity>> = routingRuleDao.getAllRules()
 
+suspend fun addDefaultProfile(context: android.content.Context): Boolean =
+    withContext(Dispatchers.IO) {
+
+        try {
+            val config = context.assets.open("default_config.txt")
+                .bufferedReader()
+                .use { it.readText() }
+
+            val profile = ConfigParser.parse(config.trim())
+
+            if (profile != null) {
+                profileDao.insertOrReplace(profile)
+                return@withContext true
+            }
+
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+
+        false
+    }
     suspend fun addProfileFromString(input: String): Boolean = withContext(Dispatchers.IO) {
         val trimmed = input.trim()
 
