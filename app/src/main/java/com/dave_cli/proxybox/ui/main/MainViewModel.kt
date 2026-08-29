@@ -71,17 +71,6 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
                 return PasswordAuthentication(user, pass.toCharArray())
             }
         })
-        init {
-    Authenticator.setDefault(object : Authenticator() {
-        override fun getPasswordAuthentication(): PasswordAuthentication? {
-            if (requestingProtocol?.equals("SOCKS5", ignoreCase = true) != true) {
-                return null
-            }
-            val user = CoreService.socksUser ?: return null
-            val pass = CoreService.socksPass ?: return null
-            return PasswordAuthentication(user, pass.toCharArray())
-        }
-    })
 
     // Load default VPN config on first app start
     viewModelScope.launch {
