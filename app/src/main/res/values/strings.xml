@@ -60,7 +60,7 @@
     <string name="routing_rules">Routing Rules</string>
     <string name="none_no_custom_rules">None (no custom rules)</string>
     <string name="none">None</string>
-    <string name="rules_count">%s (%d rules)</string>
+    <string name="rules_count">%1$d rules, %2$d items</string>
     <string name="no_rules_hint">No custom rules imported yet.\nFormat: v2rayN routing rules JSON\nUse File / URL below to import.</string>
     <string name="file">File</string>
     <string name="url">URL</string>
