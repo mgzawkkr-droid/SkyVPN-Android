@@ -1,1 +1,1 @@
-vless://YOUR_UUID@YOUR_SERVER:443?security=reality&type=tcp&pbk=YOUR_PUBLIC_KEY&sid=YOUR_SHORT_ID&fp=chrome#SkyVPN
+vless://52327f1e-915d-4aad-b6d9-f05756026d80@54.251.150.41:53525?encryption=none&security=none&type=tcp#Sky-Vpn-Sky-vpn
