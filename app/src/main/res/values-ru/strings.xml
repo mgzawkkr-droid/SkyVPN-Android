@@ -60,7 +60,7 @@
     <string name="routing_rules">Правила маршрутизации</string>
     <string name="none_no_custom_rules">Нет (без пользовательских правил)</string>
     <string name="none">Нет</string>
-    <string name="rules_count">%s (%d правил)</string>
+    <string name="rules_count">%1$d правил, %2$d элементов</string>
     <string name="no_rules_hint">Нет импортированных правил.\nФормат: v2rayN routing rules JSON\nИспользуйте Файл / URL для импорта.</string>
     <string name="file">Файл</string>
     <string name="url">URL</string>
