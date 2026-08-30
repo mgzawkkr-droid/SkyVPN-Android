@@ -79,7 +79,7 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
         }
     }
         }
-    }
+    
 
     fun selectProfile(id: String) = viewModelScope.launch { repo.selectProfile(id) }
 
